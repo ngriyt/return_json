@@ -42,7 +42,6 @@ if (!empty($_GET)) {
 		case 'save':
 			$id = $_GET['id'];
 			$q = $db->query("UPDATE `company` SET `name`='".$_GET['name'.$id]."',`created`='".$_GET['created'.$id]."',`address`='".$_GET['address'.$id]."',`phone`='".$_GET['phone'.$id]."',`site`='".$_GET['site'.$id]."',`director`='".$_GET['director'.$id]."',`info`='".$_GET['info'.$id]."' WHERE `name`='".$_GET["name".$id]."';");
-			print_r($q);
 			header('Location: http://digcrm.tk');
 			break;
 	}
